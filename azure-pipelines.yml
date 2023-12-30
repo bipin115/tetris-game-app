@@ -17,7 +17,7 @@ variables:
   tag: '$(Build.BuildId)'
 
   # Agent VM image name
-  vmImageName: 'Self-hosted'
+  pool: mycomputeragent
 
 stages:
 - stage: Build
