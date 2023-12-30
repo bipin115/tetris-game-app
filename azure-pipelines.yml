@@ -5,6 +5,8 @@
 trigger:
 - main
 
+pool: "mycomputeragent"
+
 resources:
 - repo: self
 
@@ -16,7 +18,7 @@ variables:
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '$(Build.BuildId)'
 
-pool: mycomputeragent
+
 
 stages:
 - stage: Build
