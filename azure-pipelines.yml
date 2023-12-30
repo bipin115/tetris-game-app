@@ -5,7 +5,7 @@
 trigger:
 - main
 
-pool: "mycomputeragent"
+pool: mycomputeragent
 
 resources:
 - repo: self
@@ -17,8 +17,6 @@ variables:
   containerRegistry: 'mylab115.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '$(Build.BuildId)'
-
-
 
 stages:
 - stage: Build
